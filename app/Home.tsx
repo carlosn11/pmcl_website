@@ -1,18 +1,17 @@
 import Image from "next/image";
 import react,  {PropsWithChildren } from "react";
-import Navbar from "./Components/NavBar";
-
-
+import Nav from "./Components/nav";
 export default function Home() {
 
 
   return (
     <main>
       <div className="App">
-        <Navbar />
+        
         <div className="container">
         </div>
         <h1> Hello Next </h1>
+        <Nav />
       </div>
     </main>
   );
