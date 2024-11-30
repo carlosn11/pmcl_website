@@ -15,21 +15,22 @@ const links = [
 {
   path: "/contact",
   name: "contact",
-}
+},
 
-]
+  ]
 
   return(
     <nav>
-      <ul>
-        <li>
-          {links.map(link =>{
-
-            return(
-              <li key={link.}
-            )
-          })}
-        </li>
+      <ul className="flex gap-12">
+      {links.map(link =>{
+          return(
+          <li key={link.path}>
+            <Link href={link.path}>
+              <span>{link.name}</span>
+            </Link>
+          </li>
+          )
+        })}
       </ul>
     </nav>
   )
