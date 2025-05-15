@@ -1,10 +1,33 @@
+/**
+ * The `Nav` component renders a navigation bar with a logo and a list of links.
+ * 
+ * @component
+ * @example
+ * // Usage example:
+ * <Nav />
+ * 
+ * @returns {JSX.Element} The rendered navigation bar component.
+ * 
+ * @remarks
+ * The navigation bar includes a logo image and a list of links defined in the `links` array.
+ * Each link is rendered as a list item with a `Link` component.
+ * 
+ * @see {@link https://reactjs.org/docs/components-and-props.html | React Components and Props}
+ */
+
+
 "use client";
 import Link from "next/link";
 import Image from "next/image";
 
-
 export default function Nav(){
 
+  /**
+   * An array of link objects used for navigation.
+   * Each link object contains the following properties:
+   * - `path`: A string representing the URL path of the link.
+   * - `name`: A string representing the display name of the link.
+   */
   const links = [
     {
       path: "/",
@@ -25,23 +48,24 @@ export default function Nav(){
   ];
 
   return(
-    <nav className="Nav Bar">
-      <div className="logo"> 
+    <nav className="nav-bar">
+      <div className="logo-nav"> 
         <Image
-          className="logo_nav"
-          src="logo PMCL no-circle white.svg"
+          className="logo-nav"
+          src="logo-PMCL-no-circle-white.svg"
           alt="PMCL Painting logo"
           width={40}
-          height={10}
+          height={40}
           priority
         />
       </div>
         <ul className="links">          
-        {links.map(link =>{
-          return(
+        {links.map(link => {
+          // Ensure link.path is unique for each link
+          return (
           <li key={link.path}>
             <Link 
-            className="text_links"
+            className="text-links"
             href={link.path}>
               <span>{link.name}</span>
             </Link>
@@ -49,6 +73,13 @@ export default function Nav(){
           )
         })}
       </ul> 
+
+        <button 
+          className="quote-button" 
+          onClick={() => window.location.href = '/contact'}
+        > Get a Quote!
+        </button>
+
     </nav>
   );
 }
