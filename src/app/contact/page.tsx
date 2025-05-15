@@ -19,32 +19,66 @@ export default function Contact() {
           
           
           <li className="form-item">
-            <label className="name-block">
+            <label className="name-block"  
+            htmlFor="customer-name">
               Name:
-              <input className="customer-name" />
+              <input 
+              className="customer-name"
+              id="customer-name"
+              type="text"
+              placeholder="Enter your name" 
+              aria-label="Name"
+              required
+              />
             </label>
           </li>
 
           <li className="form-item">
-            
-            <label className="email-block">
+            <label className="email-block"  
+            htmlFor="customer-email">
               Email:
-              <input className="customer-email" />
+              <input 
+              className="customer-email"
+              id="customer-email"
+              type="email"
+              placeholder="Enter your email"
+              aria-label="Email"
+              required
+               />
             </label>  
           </li>
             
           <li className="form-item">
-            <label className="phone-block">
+            <label className="phone-block" 
+            htmlFor="customer-number">
               Phone Number:
-              <input className="customer-number" />
-            </label>  
+            
+            <input
+              
+              className="customer-number"
+              id="customer-number"
+              type="tel"
+              placeholder="Enter your phone number"
+              aria-label="Phone Number" 
+              required
+              />
+            </label>
           </li>
 
           <li className="form-item">
-            <label className="job-block">
+            <label className="job-block" 
+            htmlFor="job-description">
               Job Description:
-              </label>
-            <textarea className="job-description" rows={4} />
+            
+            <textarea
+              className="job-description"  
+              id="job-description" 
+              rows={4}
+              placeholder="Describe the job details"
+              aria-label="Job Description"
+              required
+              />
+            </label>
           </li>
 
         </ol>
