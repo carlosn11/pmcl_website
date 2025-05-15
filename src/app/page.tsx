@@ -55,19 +55,19 @@ export default function Home() {
       <h2>Our Portfolio</h2>
       <div className="portfolio-grid">
         <div className="portfolio-item">
-          <img src="/Interion-Room.jpg" alt="Portfolio 1"
+          <Image src="/Interion-Room.jpg" alt="Portfolio 1"
           width={300}
           height={300}
            />
         </div>
         <div className="portfolio-item">
-          <img src="/Interior-Dining-Room.jpg" alt="Portfolio 2" 
+          <Image src="/Interior-Dining-Room.jpg" alt="Portfolio 2" 
           width={300}
           height={300}
           />
         </div>
         <div className="portfolio-item">
-          <img src="/Exterior-After-zoom.JPG" alt="Portfolio 3" 
+          <Image src="/Exterior-After-zoom.JPG" alt="Portfolio 3" 
           width={300}
           height={300}
           />
@@ -79,7 +79,10 @@ export default function Home() {
     <section className="about-us">
       <h2>About Us</h2>
       <div className="about-us-content">
-        <img src="/logo-PMCL.svg" alt="Our Team" />
+        <Image src="/logo-PMCL.svg" alt="Our Team" 
+          width={300}
+          height={300}
+          />
         <p>
           We are a team of experienced painters dedicated to providing high-quality services. We pride ourselves on our attention to detail and commitment to customer satisfaction.
         </p>

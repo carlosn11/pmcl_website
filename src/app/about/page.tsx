@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from "next/image";
 
 export default function About() {
     return (
@@ -33,23 +34,24 @@ export default function About() {
               <h2>Meet the Team</h2>
               <div className="team-members">
                 <div className="team-member">
-                  <img src="/images/team-member1.jpg" alt="Team Member 1" />
+                  <Image src="/images/team-member1.jpg" alt="Team Member 1" 
+                  width={300}
+                  height={300}
+                  />
                   <h3>[Team Member 1 Name]</h3>
                   <p>[Team Member 1 Title]</p>
                   <p>[Short Bio/Description]</p>
                 </div>
-                <div className="team-member">
-                  <img src="/images/team-member2.jpg" alt="Team Member 2" />
-                  <h3>[Team Member 2 Name]</h3>
-                  <p>[Team Member 2 Title]</p>
-                  <p>[Short Bio/Description]</p>
-                </div>
+
                 {/* Add more team members as needed */}
               </div>
             </div>
     
             <div className="company-image">
-              <img src="/images/about-us-image.jpg" alt="About Us" />
+              <Image src="/images/about-us-image.jpg" alt="About Us" 
+              width={300}
+              height={300}
+              />
             </div>
           </section>
     

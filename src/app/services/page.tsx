@@ -13,7 +13,10 @@ export default function services() {
 
         <section className="service-details">
         <div className="service-item">
-            <img src="/Interior-Dining-Room.jpg" alt="Interior Painting" />
+            <Image src="/Interior-Dining-Room.jpg" alt="Interior Painting" 
+            width={300}
+            height={300}
+            />
             <h2>Interior Painting</h2>
             <p>
             Transform your living spaces with our expert interior painting services. We handle everything from surface preparation to the final coat, ensuring a flawless finish.
@@ -50,7 +53,10 @@ export default function services() {
 
 
         <div className="service-item">
-            <img src="/images/cabinet-service.jpg" alt="Cabinet Refinishing" />
+            <Image src="/images/cabinet-service.jpg" alt="Cabinet Refinishing" 
+            width={300}
+            height={300}
+            />
             <h2>Cabinet Refinishing</h2>
             <p>
             Give your kitchen or bathroom cabinets a fresh, new look without the expense of replacement. Our refinishing services can breathe new life into your space.
