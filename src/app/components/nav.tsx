@@ -38,7 +38,7 @@ export default function Nav(){
       name: "Services",
     },
     {
-      path: "/about",
+      path: "/",
       name: "About",
     },
     {

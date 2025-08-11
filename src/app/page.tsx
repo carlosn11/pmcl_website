@@ -317,7 +317,7 @@ function ContactSection() {
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2023 PMCL Painting. All rights reserved.</p>
+      <p> 2023 PMCL Painting. All rights reserved.</p>
       <div className="social-media">
         <a href="https://www.facebook.com/PMCLPainting" target="_blank" rel="noopener noreferrer">Facebook</a>
         <a href="https://www.instagram.com/PMCLPainting" target="_blank" rel="noopener noreferrer">Instagram</a>
