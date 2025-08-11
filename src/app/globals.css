@@ -24,6 +24,7 @@
   justify-content: center;
   display: flex;
   background:rgb(74, 93, 119);
+  margin: 25px
 }
 
 /* Generalized styles for navigation */
