@@ -206,20 +206,6 @@ function PortifolioSection() {
   )
 }
 
-<section className="testimonials">
-  <h2>Testimonials</h2>
-  <div className="testimonial-grid">
-    <div className="testimonial-item">
-      <p>“Great service and excellent results! Highly recommend.”</p>
-      <p>- John Doe</p>
-    </div>
-    <div className="testimonial-item">
-      <p>“The painters were professional and efficient. We are very happy with the outcome.”</p>
-      <p>- Jane Smith</p>
-    </div>
-    {/* Add more testimonials */}
-  </div>
-</section>
 
 
 function ContactSection() {
